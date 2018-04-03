@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.header {
+  background-color: rgb(21, 28, 41);
+  color: white;
+
+  padding: 10px;
+}
+.header h1 {
+  margin: 0;
+}
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color:grey;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.settings {
+  width: 20vw;
+  padding: 40px;
+  background-color: rgb(38, 52, 77);
+}
+.main{
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.filter{
+  width: 100%; 
+}
+.image {
+   background-size: cover;
+}
+.filter .image {
+  width: 80vw;
+  height: 80vh;
+ 
+}
+
+.filter-list{
+  width: 100%;
+  display: flex;
+}
+.filter-list .image {
+  width: 20vw;
+  height: 20vh;
+
+}
+.setting{
+  display: grid;
+  margin: 20px;
+}
+.setting label div:nth-child(1) {
+  float: left;
+}
+.setting label div:nth-child(2) {
+  float: right;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
