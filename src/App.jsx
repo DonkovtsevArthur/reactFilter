@@ -36,7 +36,7 @@ class App extends Component {
     const { image, selectedFilter, settings } = this.state;
     return (
       <div className="App">
-        <Header title="ReactInstagram" />
+        <Header title="ReactFilter" />
         <section className="content">
           <Settings settings={settings} handleChange={this.handleChange} />
           <main className="main">
