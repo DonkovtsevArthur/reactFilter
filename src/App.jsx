@@ -8,10 +8,11 @@ import Filter from "./components/Filter";
 import Image from "./components/Image";
 import FilterList from "./components/FilterList";
 
+import image from "./img/lion.png";
+
 class App extends Component {
   state = {
-    image:
-      "http://wallons.ru/fon/45/priroda_doroga_zheleznaya_zakat_1920x1200.jpg",
+    image,
     selectedFilter: "",
     settings: {
       contrast: 100,
@@ -26,7 +27,7 @@ class App extends Component {
     const value = event.target.value;
     const settings = { ...this.state.settings, [setting]: value };
 
-    this.setState ({ selectedFilter: "", settings });
+    this.setState({ selectedFilter: "", settings });
   };
 
   updateSettings = (selectedFilter, settings) => {
