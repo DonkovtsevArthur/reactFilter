@@ -8,11 +8,10 @@ import Filter from "./components/Filter";
 import Image from "./components/Image";
 import FilterList from "./components/FilterList";
 
-import image from "./img/lion.png";
-
 class App extends Component {
   state = {
-    image,
+    image:
+      "https://images.unsplash.com/photo-1492646263558-de1604f2c2e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     selectedFilter: "",
     settings: {
       contrast: 100,
